@@ -1,5 +1,5 @@
 *.o
-/__pyache__
+/__pycache__
 /dist
 *.spec
 /build

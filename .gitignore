@@ -1,0 +1,5 @@
+*.o
+/__pyache__
+/dist
+*.spec
+/build

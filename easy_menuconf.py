@@ -47,8 +47,8 @@ def _nodeval_to_rgba(intval):
       0x83F1+        : semi-transparent direct-color pixel
     """
     if intval < 0x8000:
-        r = (intval >> 11) & 0x1F;  r = (r << 3) | (r >> 2)
-        g = (intval >>  5) & 0x3F;  g = (g << 2) | (g >> 4)
+        r = (intval >> 10) & 0x1F;  r = (r << 3) | (r >> 2)
+        g = (intval >>  5) & 0x1F;  g = (g << 3) | (g >> 2)
         b =  intval        & 0x1F;  b = (b << 3) | (b >> 2)
         return r, g, b, 255
     elif intval >= 0x8020 + 31 * 31:
